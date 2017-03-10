@@ -1,0 +1,46 @@
+{
+  "name": "api-api/structure-dummy-name",
+  "description": "Structure implementation for [...].",
+  "version": "1.0.0",
+  "license": "GPL-3.0",
+  "keywords": [
+    "api-api",
+    "structure",
+    "structure-dummy-name"
+  ],
+  "homepage": "http://awesome.ug",
+  "authors": [
+    {
+      "name": "Felix Arntz",
+      "email": "felix-arntz@leaves-and-love.net",
+      "homepage": "https://leaves-and-love.net",
+      "role": "Lead Developer"
+    },
+    {
+      "name": "Sven Wagener",
+      "email": "sven@awesome.ug",
+      "homepage": "http://awesome.ug",
+      "role": "Head of Development"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/api-api/structure-dummy-name/issues"
+  },
+  "config": {
+    "preferred-install": "dist"
+  },
+  "autoload": {
+    "psr-4": {
+      "APIAPI\\Structure_Dummy_Name\\": "src/Structure_Dummy_Name/"
+    },
+    "files": [
+      "src/structure-dummy-name.php"
+    ]
+  },
+  "require": {
+    "api-api/core": "*"
+  },
+  "require-dev": {
+    "codeclimate/php-test-reporter": "dev-master"
+  }
+}
