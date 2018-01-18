@@ -2,13 +2,14 @@
 /**
  * Structure_Dummy_Name class
  *
- * @package APIAPIStructureDummyName
+ * @package APIAPI\Structure_Dummy_Name
  * @since 1.0.0
  */
 
 namespace APIAPI\Structure_Dummy_Name;
 
 use APIAPI\Core\Structures\Structure;
+use APIAPI\Core\Request\Method;
 
 if ( ! class_exists( 'APIAPI\Structure_Dummy_Name\Structure_Dummy_Name' ) ) {
 
@@ -26,7 +27,6 @@ if ( ! class_exists( 'APIAPI\Structure_Dummy_Name\Structure_Dummy_Name' ) ) {
 		 * class and default authentication data.
 		 *
 		 * @since 1.0.0
-		 * @access protected
 		 */
 		protected function setup() {
 			// You must set the following data.
@@ -42,12 +42,12 @@ if ( ! class_exists( 'APIAPI\Structure_Dummy_Name\Structure_Dummy_Name' ) ) {
 			// The following is a simple example of a single route.
 			/*$this->routes['/account/settings.json'] = array(
 				'methods' => array(
-					'GET'  => array(
+					Method::GET  => array(
 						'description'          => 'Returns settings for the authenticating user.',
 						'needs_authentication' => true,
 						'params'               => array(),
 					),
-					'POST' => array(
+					Method::POST => array(
 						'description'          => 'Updates the authenticating user’s settings.',
 						'needs_authentication' => true,
 						'params'               => array(

@@ -2,7 +2,7 @@
 /**
  * Structure loader.
  *
- * @package APIAPIStructureDummyName
+ * @package APIAPI\Structure_Dummy_Name
  * @since 1.0.0
  */
 
